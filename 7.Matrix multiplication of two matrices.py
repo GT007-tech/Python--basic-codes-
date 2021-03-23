@@ -6,7 +6,7 @@ order.insert(0,int(input('Enter the number of rows in matrix 1:')))
 order.insert(1,int(input('Enter the number of columns in matrix 1:')))
 order.insert(2,int(input('Enter the number of rows in matrix 2:')))
 order.insert(3,int(input('Enter the number of columns in matrix 2:')))
-################################################
+################################################Input for matrix 1
 if order[2] == order[1]:
     type = input("select matrix 1 elements type: 'f' for float and 'i' for int:")
     if type == 'i':
@@ -21,7 +21,7 @@ if order[2] == order[1]:
     mar1 = mar1.reshape(order[0],order[1])
     mar1 = matrix(mar1)
     print("Matrix 1:",mar1)
-    ######################################################
+    ######################################################input for matrix 2
     type = input("select  matrix 2 elements type: 'f' for float and 'i' for int:")
     if type == 'i':
         for i in range(order[2]*order[3]):
